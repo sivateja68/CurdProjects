@@ -31,7 +31,7 @@ public class UserRestControll {
 		Integer id = service.saveUser(user);
 		
 		try {
-			
+			//save user data in database
 			resp=new ResponseEntity<String>("User '"+ id+"' is saved and ",HttpStatus.OK);
 		} catch (Exception e) {
 			e.printStackTrace();
