@@ -15,6 +15,8 @@ public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private UserRepository repo;
+	
+	//this method is related to save
 	@Override
 	public Integer saveUser(User user) {
 		return repo.save(user).getId();
